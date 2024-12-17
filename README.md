@@ -1,1 +1,1 @@
-You can try the project by clicking http://click.me/
+You can try the project by clicking https://priyanshu1070.github.io/temp-converter/
