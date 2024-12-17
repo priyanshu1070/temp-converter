@@ -1,0 +1,102 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    width: 100%;
+    background-color: rgb(31, 31, 31);
+}
+.main{
+    border-radius: 5px;
+    background-color: rgb(39, 39, 39);
+    box-shadow: 0 0 0.9rem rgb(15, 15, 15);
+    padding: 10px 20px;
+    display: flex;
+    flex: 1;
+    margin: 0rem 2rem;
+    justify-content: center;
+    line-height: 3rem;
+    text-align: center;
+}
+.heading{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    display: block;
+    line-height: 5rem;
+}
+
+.display{
+    display: flex;
+}
+#input{
+    outline: none;
+    border: none;
+    color: rgb(85, 85, 85);
+    text-align: center;
+    padding: 0.6rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(0, 255, 157);
+    border-radius: 2rem;
+    margin:0 2rem 0 0;
+}
+#output{
+    outline: none;
+    border: none;
+    color: rgb(85, 85, 85);
+    text-align: center;
+    padding: 0.6rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(0, 255, 157);
+    border-radius: 2rem;
+    margin: 0 0 0 2rem;
+}
+@media(max-width:550px){
+    .display{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 5.5rem;
+    }
+    #input,#output{
+        margin: 0;
+    }
+}
+.text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(194, 191, 191);
+    font-weight: 600;
+}
+.input{
+    cursor: pointer;
+}
+.btn{
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(199, 17, 17);
+    border-radius: 0.2rem;
+    padding: 0.3rem 0.6rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btn:hover{
+    background-color: rgb(163, 14, 14);
+    box-shadow: 0 0 0.5rem 0.2rem rgb(202, 29, 29);
+}
+.toggle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 30rem;
+    margin: 3rem 0 2rem 0;
+}
+.ftoc{
+    margin-left: 3.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(194, 191, 191);
+    font-weight: 600;
+}
