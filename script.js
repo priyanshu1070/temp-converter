@@ -11,21 +11,28 @@ right_panel.disabled=true;
 toggle.onclick=switch_Temp;
 function convert(){
      input = Number(left_panel.value);
-    if (toggle.checked){
+    if (toggle.checked)
+    {
         celsius = (input-32)*(5/9);
         output=celsius;
         right_panel.value=celsius+"°C";
     }
-    else if(!(toggle.checked)){
+    else 
+    {
         fahrenheit = (input * 9/5) + 32;
+        output=fahrenheit;
         right_panel.value=fahrenheit+"°F";
-    }
-    else{
-        window.alert("Select the conversion first.")
     }
 }
 function switch_Temp()
-{    output=fahrenheit;
-    left_panel.value=output+"°F";
-    right_panel.value=input+"°C";
+{   if(toggle.checked)
+    {
+        left_panel.value=output+"°F";
+        right_panel.value=input+"°C";
+    }
+    else
+    {
+        left_panel.value=input+"°C";
+        right_panel.value=output+"°F";
+    }
 }
