@@ -8,17 +8,18 @@ const output = document.getElementById("output");
 button.onclick=convert;
 toggle.onclick=convert;
 
+left_panel.onchange=convert;
 function convert(){
     let input = Number(left_panel.value);
     let celsius;
     let fahrenheit;
     if (toggle.checked){
         celsius = (input-32)*(5/9);
-        output.value=celsius;
+        output.value=celsius+"°C";
     }
     else if(!(toggle.checked)){
         fahrenheit = (input * 9/5) + 32;
-        output.value=fahrenheit;
+        output.value=fahrenheit+"°F";
     }
     else{
         window.alert("Select the conversion first.")
